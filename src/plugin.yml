@@ -1,7 +1,75 @@
 name: EggsManager
-version: 0.2
+version: 0.3
 main: dk.shax.EggsManager
 commands:
     eggsmanager:
         description: Use command reload to reload plugin, and reset to reset config file.
         usage: /eggsmanager <Command> <True/False>
+        
+permissions:
+    eggsmanager.spawn.*:
+        default: op
+        description: Gives access to spawn all mobs through eggs.
+        children:
+            aim.group: true
+            aim.viewgroupings: true
+    eggsmanager.spawn.skeleton:
+        default: op
+        description: Can spawn skeletons through the use of eggs.
+    eggsmanager.spawn.creeper:
+        default: op
+        description: Can spawn creepers through the use of eggs.
+    eggsmanager.spawn.slime:
+        default: op
+        description: Can spawn slimes through the use of eggs.
+    eggsmanager.spawn.zombie:
+        default: op
+        description: Can spawn zombies through the use of eggs.
+    eggsmanager.spawn.spider:
+        default: op
+        description: Can spawn spiders through the use of eggs.
+    eggsmanager.spawn.chicken:
+        default: op
+        description: Can spawn chickens through the use of eggs.
+    eggsmanager.spawn.cavespider:
+        default: op
+        description: Can spawn cave spiders through the use of eggs.
+    eggsmanager.spawn.cow:
+        default: op
+        description: Can spawn cows through the use of eggs.
+    eggsmanager.spawn.enderman:
+        default: op
+        description: Can spawn endermen through the use of eggs.
+    eggsmanager.spawn.wolf:
+        default: op
+        description: Can spawn wolves through the use of eggs.
+    eggsmanager.spawn.pigzombie:
+        default: op
+        description: Can spawn pig zombies through the use of eggs.
+    eggsmanager.spawn.squid:
+        default: op
+        description: Can spawn squids through the use of eggs.
+    eggsmanager.spawn.magmacube:
+        default: op
+        description: Can spawn magma cubes through the use of eggs.
+    eggsmanager.spawn.sheep:
+        default: op
+        description: Can spawn sheep through the use of eggs.
+    eggsmanager.spawn.blaze:
+        default: op
+        description: Can spawn blazes through the use of eggs.
+    eggsmanager.spawn.villager:
+        default: op
+        description: Can spawn villagers through the use of eggs.
+    eggsmanager.spawn.silverfish:
+        default: op
+        description: Can spawn silverfish through the use of eggs.
+    eggsmanager.spawn.pig:
+        default: op
+        description: Can spawn pigs through the use of eggs.
+    eggsmanager.spawn.ghast:
+        default: op
+        description: Can spawn ghasts through the use of eggs.
+    eggsmanager.spawn.mooshroom:
+        default: op
+        description: Can spawn mooshrooms through the use of eggs.

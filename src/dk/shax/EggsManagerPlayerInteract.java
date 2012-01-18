@@ -23,64 +23,64 @@ public class EggsManagerPlayerInteract extends PlayerListener {
 		
 			if (event.useItemInHand() != null){
 				if (player.getItemInHand().getTypeId() == 383){
-					if (!plugin.isAllowedSkeleton && player.getItemInHand().getData().getData() == 51){
+					if (!player.hasPermission("eggsmanager.spawn.skeleton") && player.getItemInHand().getData().getData() == 51){
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedCreeper && player.getItemInHand().getData().getData() == 50) {
+					} else if (!player.hasPermission("eggsmanager.spawn.creeper") && player.getItemInHand().getData().getData() == 50) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedSlime && player.getItemInHand().getData().getData() == 55) {
+					} else if (!player.hasPermission("eggsmanager.spawn.slime") && player.getItemInHand().getData().getData() == 55) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedZombie && player.getItemInHand().getData().getData() == 54) {
+					} else if (!player.hasPermission("eggsmanager.spawn.zombie") && player.getItemInHand().getData().getData() == 54) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedSpider && player.getItemInHand().getData().getData() == 52) {
+					} else if (!player.hasPermission("eggsmanager.spawn.spider") && player.getItemInHand().getData().getData() == 52) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedChicken && player.getItemInHand().getData().getData() == 93) {
+					} else if (!player.hasPermission("eggsmanager.spawn.chicken") && player.getItemInHand().getData().getData() == 93) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedCaveSpider && player.getItemInHand().getData().getData() == 59) {
+					} else if (!player.hasPermission("eggsmanager.spawn.cavespider") && player.getItemInHand().getData().getData() == 59) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedCow && player.getItemInHand().getData().getData() == 92) {
+					} else if (!player.hasPermission("eggsmanager.spawn.cow") && player.getItemInHand().getData().getData() == 92) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedEnderman && player.getItemInHand().getData().getData() == 58) {
+					} else if (!player.hasPermission("eggsmanager.spawn.enderman") && player.getItemInHand().getData().getData() == 58) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedWolf && player.getItemInHand().getData().getData() == 95) {
+					} else if (!player.hasPermission("eggsmanager.spawn.wolf") && player.getItemInHand().getData().getData() == 95) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedPigZombie && player.getItemInHand().getData().getData() == 57) {
+					} else if (!player.hasPermission("eggsmanager.spawn.pigzombie") && player.getItemInHand().getData().getData() == 57) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedSquid && player.getItemInHand().getData().getData() == 94) {
+					} else if (!player.hasPermission("eggsmanager.spawn.squid") && player.getItemInHand().getData().getData() == 94) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedMagmaCube && player.getItemInHand().getData().getData() == 62) {
+					} else if (!player.hasPermission("eggsmanager.spawn.magmacube") && player.getItemInHand().getData().getData() == 62) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedSheep && player.getItemInHand().getData().getData() == 91) {
+					} else if (!player.hasPermission("eggsmanager.spawn.sheep") && player.getItemInHand().getData().getData() == 91) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedBlaze && player.getItemInHand().getData().getData() == 61) {
+					} else if (!player.hasPermission("eggsmanager.spawn.blaze") && player.getItemInHand().getData().getData() == 61) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedVillager && player.getItemInHand().getData().getData() == 120) {
+					} else if (!player.hasPermission("eggsmanager.spawn.villager") && player.getItemInHand().getData().getData() == 120) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedSilverfish && player.getItemInHand().getData().getData() == 60) {
+					} else if (!player.hasPermission("eggsmanager.spawn.silverfish") && player.getItemInHand().getData().getData() == 60) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedPig && player.getItemInHand().getData().getData() == 90) {
+					} else if (!player.hasPermission("eggsmanager.spawn.pig") && player.getItemInHand().getData().getData() == 90) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedGhast && player.getItemInHand().getData().getData() == 56) {
+					} else if (!player.hasPermission("eggsmanager.spawn.ghast") && player.getItemInHand().getData().getData() == 56) {
 						not_allowed(player);
 						event.setCancelled(true);
-					} else if (!plugin.isAllowedMooshroom && player.getItemInHand().getData().getData() == 96) {
+					} else if (!player.hasPermission("eggsmanager.spawn.mooshroom") && player.getItemInHand().getData().getData() == 96) {
 						not_allowed(player);
 						event.setCancelled(true);
 					}
