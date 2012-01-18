@@ -4,6 +4,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
 
 public class EggsManagerCommandExecutor implements CommandExecutor {
 	
@@ -15,10 +16,17 @@ public class EggsManagerCommandExecutor implements CommandExecutor {
 	}
 
     public boolean onCommand (CommandSender sender, Command command, String label, String[] args) {
-    	
+    	Player player = null;
+    	if(sender instanceof Player) {
+    		player = (Player)sender;
+    	}
     	if (command.getName().equals("eggsmanager")){
     		if (args.length != 0){
 		    	if (args[0].equals("reset")){
+		    		if(player != null && !player.hasPermission("eggsmanager.reset")) {
+		    			//The player doesn't have permission, let's just return...
+		    			return true;
+		    		}
 		    	
 					if (args.length < 2){
 						return false;
@@ -39,7 +47,10 @@ public class EggsManagerCommandExecutor implements CommandExecutor {
 				
 					}
 		    	} else if (args[0].equals("reload")){
-		    		
+		    		if(player != null && !player.hasPermission("eggsmanager.reload")) {
+		    			//The player doesn't have permission, let's just return...
+		    			return true;
+		    		}
 					if (args.length < 2){
 						return false;
 					}

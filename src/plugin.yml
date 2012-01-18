@@ -7,6 +7,19 @@ commands:
         usage: /eggsmanager <Command> <True/False>
         
 permissions:
+    eggsmanager.*:
+        default: op
+        description: Gives access to all commands and mob spawns.
+        children:
+            eggsmanager.spawn.*: true
+            eggsmanager.reset: true
+            eggsmanager.reload: true
+    eggsmanager.reset:
+        default: op
+        description: Can reset the config file back to the defaults.
+    eggsmanager.reload:
+        default: op
+        description: Can reload the config file.
     eggsmanager.spawn.*:
         default: op
         description: Gives access to spawn all mobs through eggs.
