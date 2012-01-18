@@ -11,8 +11,26 @@ permissions:
         default: op
         description: Gives access to spawn all mobs through eggs.
         children:
-            aim.group: true
-            aim.viewgroupings: true
+            eggsmanager.spawn.skeleton: true
+            eggsmanager.spawn.creeper: true
+            eggsmanager.spawn.slime: true
+            eggsmanager.spawn.zombie: true
+            eggsmanager.spawn.spider: true
+            eggsmanager.spawn.chicken: true
+            eggsmanager.spawn.cavespider: true
+            eggsmanager.spawn.cow: true
+            eggsmanager.spawn.enderman: true
+            eggsmanager.spawn.wolf: true
+            eggsmanager.spawn.pigzombie: true
+            eggsmanager.spawn.squid: true
+            eggsmanager.spawn.magmacube: true
+            eggsmanager.spawn.sheep: true
+            eggsmanager.spawn.blaze: true
+            eggsmanager.spawn.villager: true
+            eggsmanager.spawn.silverfish: true
+            eggsmanager.spawn.pig: true
+            eggsmanager.spawn.ghast: true
+            eggsmanager.spawn.mooshroom: true
     eggsmanager.spawn.skeleton:
         default: op
         description: Can spawn skeletons through the use of eggs.
